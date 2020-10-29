@@ -17,21 +17,21 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="radius_mean" placeholder="radius_mean" required="required" />
-      <input type="text" name="texture_mean" placeholder="texture_mean" required="required" />
-      <input type="text" name="smoothness_mean" placeholder="smoothness_mean" required="required" />
-      <input type="text" name="compactness_mean" placeholder="compactness_mean" required="required" />
-      <input type="text" name="symmetry_mean" placeholder="symmetry_mean" required="required" />
-      <input type="text" name="fractal_dimension_mean" placeholder="fractal_dimension_mean" required="required" />
-      <input type="text" name="radius_se" placeholder="radius_se" required="required" />
-      <input type="text" name="texture_se" placeholder="texture_se" required="required" />
-      <input type="text" name="smoothness_se" placeholder="smoothness_se" required="required" />
-      <input type="text" name="compactness_se" placeholder="compactness_se" required="required" />
-      <input type="text" name="symmetry_se" placeholder="symmetry_se" required="required" />
-      <input type="text" name="fractal_dimension_se" placeholder="fractal_dimension_se" required="required" />
-      <input type="text" name="smoothness_worst" placeholder="smoothness_worst" required="required" />
-      <input type="text" name="symmetry_worst" placeholder="symmetry_worst" required="required" />
-      <input type="text" name="fractal_dimension_worst" placeholder="fractal_dimension_worst" required="required" />
+    	<input type="number" step="any" name="radius_mean" placeholder="radius_mean" required="required" />
+      <input type="number" step="any" name="texture_mean" placeholder="texture_mean" required="required" />
+      <input type="number" step="any" name="smoothness_mean" placeholder="smoothness_mean" required="required" />
+      <input type="number" step="any" name="compactness_mean" placeholder="compactness_mean" required="required" />
+      <input type="number" step="any" name="symmetry_mean" placeholder="symmetry_mean" required="required" />
+      <input type="number" step="any" name="fractal_dimension_mean" placeholder="fractal_dimension_mean" required="required" />
+      <input type="number" step="any" name="radius_se" placeholder="radius_se" required="required" />
+      <input type="number" step="any" name="texture_se" placeholder="texture_se" required="required" />
+      <input type="number" step="any" name="smoothness_se" placeholder="smoothness_se" required="required" />
+      <input type="number" step="any" name="compactness_se" placeholder="compactness_se" required="required" />
+      <input type="number" step="any" name="symmetry_se" placeholder="symmetry_se" required="required" />
+      <input type="number" step="any" name="fractal_dimension_se" placeholder="fractal_dimension_se" required="required" />
+      <input type="number" step="any" name="smoothness_worst" placeholder="smoothness_worst" required="required" />
+      <input type="number" step="any" name="symmetry_worst" placeholder="symmetry_worst" required="required" />
+      <input type="number" step="any" name="fractal_dimension_worst" placeholder="fractal_dimension_worst" required="required" />
       <br><br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
