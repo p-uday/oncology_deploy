@@ -69,6 +69,10 @@
       width: calc(100% - 10px);
       padding: 5px;
       }
+      input[type="number"] {
+      width: calc(31%);
+      padding: 5px;
+      }
       input[type="date"] {
       padding: 4px 5px;
       }
@@ -232,7 +236,11 @@
         <br/>
 	      
         <fieldset>
-          <legend>Test Information</legend>
+          <legend>Test Details</legend>
+          <div class="item">
+            <label for="fname">Test Name</label>
+            <input id="fname" type="text" name="fname" />
+          </div>
           <div class="item">
             <label for="date">Date</label>
             <input id="date" type="date" name="date"/>
@@ -262,10 +270,10 @@
                 <input  type="radio" value="none" id="radio_5" name="physician"/>
                 <label for="radio_5" class="radio"><span>Dr. C</span></label>
               </div>
-	      <div class="item">
+	     <!--  <div class="item">
             	<label for="instructions">Other: </label>
             	<textarea id="instructions" rows="1"></textarea>
-              </div>
+              </div> -->
               
             </div>
           </div>
@@ -281,21 +289,21 @@
     	<fieldset>
           <legend>Test Result Information</legend>
           <div class="item">
-          <input type="number" step="any" name="radius_mean" placeholder="radius_mean" required="required" />
-	      <input type="number" step="any" name="texture_mean" placeholder="texture_mean" required="required" />
-	      <input type="number" step="any" name="smoothness_mean" placeholder="smoothness_mean" required="required" />
-	      <input type="number" step="any" name="compactness_mean" placeholder="compactness_mean" required="required" />
-	      <input type="number" step="any" name="symmetry_mean" placeholder="symmetry_mean" required="required" />
-	      <input type="number" step="any" name="fractal_dimension_mean" placeholder="fractal_dimension_mean" required="required" />
-	      <input type="number" step="any" name="radius_se" placeholder="radius_se" required="required" />
-	      <input type="number" step="any" name="texture_se" placeholder="texture_se" required="required" />
-	      <input type="number" step="any" name="smoothness_se" placeholder="smoothness_se" required="required" />
-	      <input type="number" step="any" name="compactness_se" placeholder="compactness_se" required="required" />
-	      <input type="number" step="any" name="symmetry_se" placeholder="symmetry_se" required="required" />
-	      <input type="number" step="any" name="fractal_dimension_se" placeholder="fractal_dimension_se" required="required" />
-	      <input type="number" step="any" name="smoothness_worst" placeholder="smoothness_worst" required="required" />
-	      <input type="number" step="any" name="symmetry_worst" placeholder="symmetry_worst" required="required" />
-	      <input type="number" step="any" name="fractal_dimension_worst" placeholder="fractal_dimension_worst" required="required" />
+        <input type="number" step="any" name="radius_mean" placeholder="radius_mean" required="required" /><span>*</span>
+	      <input type="number" step="any" name="texture_mean" placeholder="texture_mean" required="required" /><span>*</span>
+	      <input type="number" step="any" name="smoothness_mean" placeholder="smoothness_mean" required="required" /><span>*</span>
+	      <input type="number" step="any" name="compactness_mean" placeholder="compactness_mean" required="required" /><span>*</span>
+	      <input type="number" step="any" name="symmetry_mean" placeholder="symmetry_mean" required="required" /><span>*</span>
+	      <input type="number" step="any" name="fractal_dimension_mean" placeholder="fractal_dimension_mean" required="required" /><span>*</span>
+	      <input type="number" step="any" name="radius_se" placeholder="radius_se" required="required" /><span>*</span>
+	      <input type="number" step="any" name="texture_se" placeholder="texture_se" required="required" /><span>*</span>
+	      <input type="number" step="any" name="smoothness_se" placeholder="smoothness_se" required="required" /><span>*</span>
+	      <input type="number" step="any" name="compactness_se" placeholder="compactness_se" required="required" /><span>*</span>
+	      <input type="number" step="any" name="symmetry_se" placeholder="symmetry_se" required="required" /><span>*</span>
+	      <input type="number" step="any" name="fractal_dimension_se" placeholder="fractal_dimension_se" required="required" /><span>*</span>
+	      <input type="number" step="any" name="smoothness_worst" placeholder="smoothness_worst" required="required" /><span>*</span>
+	      <input type="number" step="any" name="symmetry_worst" placeholder="symmetry_worst" required="required" /><span>*</span>
+	      <input type="number" step="any" name="fractal_dimension_worst" placeholder="fractal_dimension_worst" required="required" /><span>*</span>
 	  </div>
 	</fieldset>
 
