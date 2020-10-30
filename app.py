@@ -19,12 +19,16 @@ def predict():
     prediction = model.predict(final_features)
 
     output = prediction[0]
+    prediction_benign=""
+    prediction_malignant=""
     if(output==0):
-        out='Denign'
+        prediction_benign='Tumour is Benign'
+        statement='Nothing To Worry'
     else:
-        out='Malignant'
+        prediction_malignant="Tumour is Malignant"
+        statement='Please Consult Doctor'
 
-    return render_template('index.html', prediction_text='Tumour is {}'.format(out))
+    return render_template('predict.html', prediction_benign=prediction_benign,prediction_malignant=prediction_malignant,statement=statement)
 
 
 if __name__ == "__main__":
